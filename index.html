@@ -7,83 +7,100 @@
     <meta name="discription" content="это сайт - резюмэ Владимира Коврижко">
     <meta name="keywords" content="vladimir, html, course, css, tags, Resume"> 
     <title>Vladimir.Kovrizhko Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="container">
     
-    <img src="vladimir.jpg" width="200" alt="Владимир Коврижко">
+        <div class="info">
+            <img src="vladimir.jpg" alt="Владимир Коврижко" class="avatar">
+            <div class="info-text">
+                <h1>Владимир Коврижко</h1>
 
-    <h1>Владимир Коврижко</h1>
+                <p>Я прохожу <strong>ОБУЧЕНИЕ</strong> онлайн школы по программированию <strong>Result School</strong></p>
 
-    <p>Я прохожу <strong>ОБУЧЕНИЕ</strong> онлайн школы по программированию <strong>Result School</strong></p>
+                <p>Я люблю <em>путешествовать, заниматься спортом, и программировать</em></p>  
 
-    <p>Я люблю <em>путешествовать, заниматься спортом, и программировать</em></p>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
+                <a href="https://vk.com/id266946741" target="_blank">Вконтакте</a> 
+                |
+                <a href="https://www.youtube.com/channel/UC3eCHR47PzoEDQx6oQ4ulWw" target="_blank">Youtube</a>
+                |
+                <a href="https://www.instagram.com/vladimir.kovrizhko/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
 
-    <ol>
-        <li>Путешествия</li>
-        <li>Программирования</li>
-        <li>youtube</li>
-        <li>Бокс</li>
-    </ol>
-
-    <h4>Список социальных сетей:</h4>
-
-    <a href="https://vk.com/id266946741" target="_blank">Вконтакте</a> 
-    |
-    <a href="https://www.youtube.com/channel/UC3eCHR47PzoEDQx6oQ4ulWw" target="_blank">Youtube</a>
-    |
-    <a href="https://www.instagram.com/vladimir.kovrizhko/" target="_blank">Instagram</a>
-
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-             <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>год</th>
-             </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td>ОАО "РЖД"</td>
-                <td>Машинист тепловоза</td>
-                <td>2012-2015</td>
-            </tr>
-            <tr>
-                <td>ПАО "Гордорстрой"</td>
-                <td>Строитель</td>
-                <td>2015-2018</td>
-            </tr>
-            <tr>
-                <td>ООО "МВПС-Сервис"</td>
-                <td>Электрик</td>
-                <td>2018-сейчас</td>
-            </tr>
-    </tbody>
-     </table>
-
-     <h2>Связвться со мной</h2>
-     <form action="">
-        <div>
-            <label for="name">Ваше Имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Программирования</li>
+                <li>youtube</li>
+                <li>Бокс</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-            <br>
-            <button type="submit">Отправить форму</button>
-        </div>
-    </form>
+        <div class="card bg-yellow">
 
+            <h2>Опыт работы</h2>
 
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>год</th>
+                    </tr> 
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>ОАО "РЖД"</td>
+                        <td>Машинист тепловоза</td>
+                        <td>2012-2015</td>
+                    </tr>
+                    <tr>
+                        <td>ПАО "Гордорстрой"</td>
+                        <td>Строитель</td>
+                        <td>2015-2018</td>
+                    </tr>
+                    <tr>
+                        <td>ООО "МВПС-Сервис"</td>
+                        <td>Электрик</td>
+                        <td>2018-сейчас</td>
+                    </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+        
+            <div class="form-group">
+                <label for="name">Ваше Имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                <br>
+                <input class="btn" type="submit" value="отправить">
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
